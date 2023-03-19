@@ -49,7 +49,7 @@ public class EmpleadoController {
     @DeleteMapping("empleado/{id}")
     public ResponseEntity<?>delete(@PathVariable("id")long id){
         if(!iEmpleado.existsById(id)){
-            return new ResponseEntity(new Mensaje("No existe el ID"),HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("No existe el Id"),HttpStatus.NOT_FOUND);
         }
             iEmpleado.deleteById(id);
         return new ResponseEntity(new Mensaje("Educacion eliminada"),HttpStatus.OK);  }
