@@ -7,8 +7,8 @@ package com.gestion.empleado.Controller;
  */
 public class Mensaje {
 
-    public String Mensaje(String no_existe_persona) {
-        return "Error";
+    public  Mensaje(String no_existe_persona) {
+        
     }
     
 }
